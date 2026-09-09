@@ -1,6 +1,12 @@
 # Godot 4+ generated cache (do not commit)
 .godot/
 
+# Build artifacts (exported binaries) — distributed via GitHub Releases
+build/
+
+# Export presets are generated locally per-machine
+export_presets.cfg
+
 # OS junk
 .DS_Store
 Thumbs.db

@@ -6,6 +6,9 @@ Hardware: AMD Radeon RX 7900 XT (RADV NAVI31), Vulkan 1.4.354, CachyOS Linux (Wa
 ## [0.2.0] — 2026-09-08
 
 ### Added
+- **Export a binario Linux x86_64** (`build/ocean-godot.x86_64`, ~71 MB, PCK
+  embebido). Funciona en Debian, CachyOS/Arch y cualquier Linux x86_64 con
+  Mesa/Vulkan. Distribuido como GitHub Release.
 - **Cámara libre** (WASD/flechas para moverse, ratón botón derecho para rotar,
   Space/C para subir/bajar, Shift para velocidad rápida).
 - **F12**: captura de pantalla manual, guardada en
@@ -29,6 +32,15 @@ Hardware: AMD Radeon RX 7900 XT (RADV NAVI31), Vulkan 1.4.354, CachyOS Linux (Wa
 - Errores de parseo del script de verificación (`Vector3` no tiene `.x`/`.y`/`.z`
   como propiedades individuales accesibles por nombre en GDScript; se usaron los
   índices `[0]`, `[1]`, `[2]` y se eliminaron funciones undefined).
+
+### Known issues
+- **Export de Windows no disponible en esta build.** Godot 4.7.2 (Arch build
+  `ed1daf0bf`) no acepta presets de exportación Windows escritos a mano en modo
+  `--headless` (el formato de opciones de code-signing difiere entre builds). La
+  API `EditorExportPresets` tampoco está disponible fuera del editor. Para
+  generar el `.exe`, abrir el editor de Godot una vez (`godot --editor`), crear
+  el preset desde Project → Export, y exportar. El binario Linux se generó sin
+  problema.
 
 ### Notas de verificación (headless, in-engine)
 - `Image.save_png()` y `--write-movie` producen imágenes negras en esta build de
