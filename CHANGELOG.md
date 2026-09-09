@@ -33,14 +33,11 @@ Hardware: AMD Radeon RX 7900 XT (RADV NAVI31), Vulkan 1.4.354, CachyOS Linux (Wa
   como propiedades individuales accesibles por nombre en GDScript; se usaron los
   índices `[0]`, `[1]`, `[2]` y se eliminaron funciones undefined).
 
-### Known issues
-- **Export de Windows no disponible en esta build.** Godot 4.7.2 (Arch build
-  `ed1daf0bf`) no acepta presets de exportación Windows escritos a mano en modo
-  `--headless` (el formato de opciones de code-signing difiere entre builds). La
-  API `EditorExportPresets` tampoco está disponible fuera del editor. Para
-  generar el `.exe`, abrir el editor de Godot una vez (`godot --editor`), crear
-  el preset desde Project → Export, y exportar. El binario Linux se generó sin
-  problema.
+### Export de Windows
+- El binario Windows (`ocean-godot-windows-x64.exe` + `.pck`) se exportó
+  abriendo el editor de Godot (`godot --editor`) y creando el preset desde
+  Project → Export, ya que esta build no acepta presets escritos a mano en modo
+  `--headless`. El PCK va separado (no embebido); copiar ambos archivos juntos.
 
 ### Notas de verificación (headless, in-engine)
 - `Image.save_png()` y `--write-movie` producen imágenes negras en esta build de
