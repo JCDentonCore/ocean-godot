@@ -71,4 +71,4 @@ See [CHANGELOG.md → Roadmap](CHANGELOG.md#roadmap--prximas-ideas-sin-confirmar
 
 ## License
 
-MIT (or whatever you'd like — ask JCDentonCore).
+GPL-3.0 — see [LICENSE](LICENSE).
