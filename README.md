@@ -1,8 +1,23 @@
 # Ocean Godot
 
+> **Concepto de prueba**: este proyecto es un experimento para verificar si un modelo
+> de lenguaje local (**Qwen3.8-27B**, GGUF `UD-IQ4_XS`, corriendo en la GPU vía llama.cpp)
+> es capaz de crear proyectos completos en Godot: escena, scripts, física procedural y
+> verificación headless — sin assets externos.
+
 A basic procedural ocean scene in [Godot 4.7](https://godotengine.org) (Forward+ renderer): a low-poly sea with animated waves, a school of 110 fish, rising bubbles, and a free-fly camera.
 
-![Hardware](https://img.shields.io/badge/AMD-RX_7900_XT-orange) ![Renderer](https://img.shields.io/badge/Renderer-Forward%2B-blue)
+![Hardware](https://img.shields.io/badge/AMD-RX_7900_XT-orange) ![Renderer](https://img.shields.io/badge/Renderer-Forward%2B-blue) ![OS](https://img.shields.io/badge/CachyOS-Kernel_Bore-blue) ![Modelo](https://img.shields.io/badge/Modelo-Qwen3.8--27B_Q4_XS-green)
+
+## Hardware de desarrollo
+
+| Componente | Detalle |
+|---|---|
+| SO | CachyOS Linux (kernel `bore`) |
+| CPU | AMD Ryzen 7 7800X3D |
+| RAM | 32 GB |
+| GPU | AMD Radeon RX 7900 XT (20 GB VRAM) |
+| Modelo local | Qwen3.8-27B GGUF `UD-IQ4_XS` (llama.cpp, GPU) |
 
 ## Screenshot
 
